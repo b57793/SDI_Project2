@@ -11,8 +11,6 @@ var potions = "health"
 var amountOfPotions = 5
 var weaponsReady = true
 
-
-
 //Procedure
 var letsGoAdventuring = function(feelingAdventurous) {
 	if ( feelingAdventurous === "yes" ) {
@@ -21,9 +19,6 @@ var letsGoAdventuring = function(feelingAdventurous) {
 		console.log( "Let's check our health and potions before we head out." );
 	};
 };
-
-
-
 
 // Boolean Function
 var readyCheck = function(health, numberOfPotions) {
@@ -44,16 +39,11 @@ var readyCheck = function(health, numberOfPotions) {
 		};
 };
 
-
-
-
 //String Function
 var baronAppears = function(travelDistance, monster) {
 	var monsterFight = ( "After leaving town and traveling " + travelDistance + ". We encountered " + monster + "!" );
 	return monsterFight;
 };
-
-
 
 //Number Function
 var baronFight = function(baronHP) {
@@ -72,8 +62,6 @@ var baronFight = function(baronHP) {
 		return BaronLife		
 };
 
-
-
 //Array Function
 var chests = function(argArray, number) {
 	var chestTypes = argArray.length;
@@ -90,7 +78,6 @@ var chests = function(argArray, number) {
 	var updatedArray = argArray
 	return updatedArray
 };
-
 
 
 
