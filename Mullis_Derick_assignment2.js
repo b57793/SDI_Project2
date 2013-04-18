@@ -17,16 +17,25 @@ var letsGoAdventuring = function(feelingAdventurous) {
 	};
 };
 
+letsGoAdventuring("yes")
+
+
+
 // Boolean Function
-var readyCheck = function (health, potions) {
-	if ( health === 100 && potions === 5 ) {
-		console.log( "Ready check complete let's go find a monster to fight!" );
+var readyCheck = function (health, numberOfPotions) {
+	if ( health === 100 && numberOfPotions === 5 ) {
+		console.log( "Ready check complete let's go find a monster!" );
 	} else {
 		console.log( "On 2nd thought we better not go out adventuring today." );
 	};
-	noAdventure = ( health <= 99 || potions <= 4 );
-	return noAdventure;
+	var status = ( "We are at " + health + " health and have " + numberOfPotions + " " + potions + " potions."  );
+	return status;
 };
+
+var status = readyCheck(100, 5);
+console.log(status);
+
+
 
 //String Function
 
@@ -40,5 +49,3 @@ var readyCheck = function (health, potions) {
 
 
 
-letsGoAdventuring("yes")
-readyCheck(100, 5);
