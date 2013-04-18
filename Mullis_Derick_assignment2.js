@@ -6,7 +6,6 @@
 
 
 //Variables
-var heroes = ["TehKuv", "SquishyDingo", "Vaus"]
 var monster = "Baron Nashor"
 var potions = "health"
 var heroHealthPoints = 100
@@ -25,7 +24,6 @@ var letsGoAdventuring = function(feelingAdventurous) {
 };
 
 letsGoAdventuring("yes")
-
 
 
 
@@ -75,8 +73,113 @@ var baronFight = function(baronHP) {
 				console.log( monster + " has been slain.");
 			};
 		};
-			return	
 };
 
 baronFight(500);
-console.log(baronHP);
+
+//Array Function
+
+
+var chests = ["Gold", "Diamond", "Emerald"],
+	numberOfChests = [ 2, 1, 1];
+
+
+var openAllChests = function(chests, numberOfChests) {
+		console.log("I found " + numberOfChests + " of " + chests);
+		
+		for (var chestNumber = 0; chestNumber < numberOfChests; chestnumber++) {
+			chestsRemain = numberOfChests - chestNumber;
+			console.log(chestNumber + "Open!" + chestsRemain + ".");
+		}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//var loot = function(array, howMany) {
+//	for (var i = 0; i < chests.length; i++) {
+//		console.log("Then we saw" + chests[i]);
+		
+//		if (i < howMany) {
+//			console.log("Found another" + chest + "!");
+//		} else {
+//			console.log("Looks like there is no more loot");
+//		};
+//	};
+//};
+
+//loot = ([chests], 5);
+
+
+
+
+
+
+
+//var loot = function([chests], number1)  {
+//	for (var i = 0; i < chests.length; i++){
+//		console.log( "The heroes are looting " + chests + " chest." );
+//	};
+
+//};
+
+
+
+
+
+
+//var spoils =([chests], 5)
+
+
+
+
+
+
+//var spoils = function(chests, amount){
+//	for (var i = 0; i >= amount; i--){
+//		console.log( "" + amount + " of " + chests);
+//	};
+
+//};
+
+//spoils(chests, 5)
+
+
+
+
+//spoils(chests, 5)
+
+
+
+//var spoils = function(howMuch, total) {
+
+//	for (var i = 0; i = total; i--)
+//			console.log("We have discovered " + total + " gold!"
+			
+//			if (
+//};
+
+//for (var i = 0; i < heroes.length; i++) {
+//	console.log( "The heroes " + heroes[i] + " will now split the gold " + monster + " was hoarding.");
+//}; 
+
+
+
+
+
+
+
