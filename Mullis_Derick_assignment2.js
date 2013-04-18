@@ -10,9 +10,7 @@ var heroes = ["TehKuv", "SquishyDingo", "Vaus"]
 var monster = "Baron Nashor"
 var potions = "health"
 var heroHealthPoints = 100
-var monsterHealthPoints = 500
 var amountOfPotions = 5
-var heroDamage = 50
 var weaponsReady = true
 
 
@@ -52,7 +50,6 @@ console.log(status);
 
 
 
-
 //String Function
 var baronAppears = function(travelDistance, monster) {
 	var monsterFight = ( "After leaving town and traveling " + travelDistance + ". We encountered " + monster + "!" );
@@ -65,3 +62,21 @@ console.log(itsTime);
 
 
 //Number Function
+
+var baronFight = function(baronHP) {
+		while (baronHP > 0) {
+		
+			console.log( monster + "'s health is " + baronHP);
+			baronHP = baronHP - 50
+		
+			if (baronHP > 0) {
+				console.log( monster + " has been attacked by our heroes for 50 damage" );
+			} else {
+				console.log( monster + " has been slain.");
+			};
+		};
+			return	
+};
+
+baronFight(500);
+console.log(baronHP);
