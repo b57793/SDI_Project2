@@ -28,37 +28,34 @@ var letsGoAdventuring = function(feelingAdventurous) {
 letsGoAdventuring("yes")
 
 
-
 // Boolean Function
-var readyCheck = function (health, numberOfPotions) {
+var readyCheck = function(health, numberOfPotions) {
 	if ( health === 100 && numberOfPotions >= 5 ) {
-		console.log( "Ready check complete." );
+		console.log( "Ready check complete. We should be good to go." );
 		if ( weaponsReady === true ) {
 			console.log ( "Our weapons are ready and yearn for battle!" );
 		} else {
-			console.log ( "We need to condition our weapons before heading out." );	
+			console.log ( "Well actually we need to condition our weapons before heading out." );	
 		};
 	} else {
-		console.log( "On 2nd thought we better not go out adventuring today." );
+		console.log( "We should rest up to 100 health and make sure we have at least 5 " + potions + " potions before we head out." );
 	};
-	var status = ( "We are at " + health + " health and have " + numberOfPotions + " " + potions + " potions."  );
-	return status;
+	var update = ( "Our current status and inventory is " + health + " health and we have " + numberOfPotions + " " + potions + " potions."  );
+	return update;
 };
 
-var status = readyCheck(100, 4);
+var status = readyCheck(100, 5);
 console.log(status);
 
 
-
 //String Function
+var baronAppears = function(travelDistance, monster) {
+	var monsterFight = ( "After traveling " + travelDistance + ". We encountered " + monster + "!" );
+	return monsterFight;
+};
 
-
-
-
-
-
-
-
+var itsTime = baronAppears("a fortnight", "Baron Nashor");
+console.log(itsTime);
 
 
 
