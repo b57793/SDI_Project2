@@ -80,32 +80,34 @@ baronFight(500);
 //Array Function
 
 
-var chests = ["Gold", "Diamond", "Emerald"],
-	numberOfChests = [ 2, 1, 1];
+var chests = function(argArray, number) {
+	var chestsLength = argArray.length;
+	for ( var i= 0;  i < chestsLength; i++); {
+		console.log("Is this working?");
+		console.log(argArray);
+	} else {
+		console.log("You did it!!)
+	
+	}
 
-
-var openAllChests = function(chests, numberOfChests) {
-		console.log("I found " + numberOfChests + " of " + chests);
-		
-		for (var chestNumber = 0; chestNumber < numberOfChests; chestnumber++) {
-			chestsRemain = numberOfChests - chestNumber;
-			console.log(chestNumber + "Open!" + chestsRemain + ".");
-		}
 };
 
+chests(["Gold", "Diamond", "Emerald"], 5)  
 
 
 
+//var chests = ["Gold", "Diamond", "Emerald"],
+//	numberOfChests = [ 2, 1, 1];
 
 
-
-
-
-
-
-
-
-
+//var openAllChests = function(chests, numberOfChests) {
+//		console.log("I found " + numberOfChests + " of " + chests);
+		
+//		for (var chestNumber = 0; chestNumber < numberOfChests; chestnumber++) {
+//			chestsRemain = numberOfChests - chestNumber;
+//			console.log(chestNumber + "Open!" + chestsRemain + ".");
+//		}
+//};
 
 
 
