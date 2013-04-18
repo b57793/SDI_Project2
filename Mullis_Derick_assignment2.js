@@ -16,6 +16,7 @@ var heroDamage = 50
 var weaponsReady = true
 
 
+
 //Procedure
 var letsGoAdventuring = function(feelingAdventurous) {
 	if ( feelingAdventurous === "yes" ) {
@@ -26,6 +27,8 @@ var letsGoAdventuring = function(feelingAdventurous) {
 };
 
 letsGoAdventuring("yes")
+
+
 
 
 // Boolean Function
@@ -40,7 +43,7 @@ var readyCheck = function(health, numberOfPotions) {
 	} else {
 		console.log( "We should rest up to 100 health and make sure we have at least 5 " + potions + " potions before we head out." );
 	};
-	var update = ( "Our current status and inventory is " + health + " health and we have " + numberOfPotions + " " + potions + " potions."  );
+	var update = ( "All hero's health at " + heroHealthPoints + " and we have " + amountOfPotions + " " + potions + " potions we are ready to depart."  );
 	return update;
 };
 
@@ -48,9 +51,11 @@ var status = readyCheck(100, 5);
 console.log(status);
 
 
+
+
 //String Function
 var baronAppears = function(travelDistance, monster) {
-	var monsterFight = ( "After traveling " + travelDistance + ". We encountered " + monster + "!" );
+	var monsterFight = ( "After leaving town and traveling " + travelDistance + ". We encountered " + monster + "!" );
 	return monsterFight;
 };
 
@@ -59,3 +64,4 @@ console.log(itsTime);
 
 
 
+//Number Function
