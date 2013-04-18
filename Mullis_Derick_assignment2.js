@@ -60,7 +60,6 @@ console.log(itsTime);
 
 
 //Number Function
-
 var baronFight = function(baronHP) {
 		while (baronHP > 0) {
 		
@@ -78,110 +77,18 @@ var baronFight = function(baronHP) {
 baronFight(500);
 
 //Array Function
-
-
 var chests = function(argArray, number) {
-	var chestsLength = argArray.length;
-	for ( var i= 0;  i < chestsLength; i++); {
-		console.log("Is this working?");
-		console.log(argArray);
-	} else {
-		console.log("You did it!!)
-	
-	}
-
+	var chestTypes = argArray.length;
+	var timedTreasureHunt = number - chestTypes
+		argArray.push("Sapphire")
+		
+	for ( var time = 0; time < timedTreasureHunt; time ++) {
+	var timeRemain = (timedTreasureHunt - time);
+		console.log("Look around for treasure, " + timeRemain + " minutes remain before we have to depart.");	
+	};
+	for ( var i= 0;  i <= chestTypes; i++) {
+		console.log("Huzzah! Look at all the loot! " + argArray[i] + " chests for everyone!");
+	};
 };
 
-chests(["Gold", "Diamond", "Emerald"], 5)  
-
-
-
-//var chests = ["Gold", "Diamond", "Emerald"],
-//	numberOfChests = [ 2, 1, 1];
-
-
-//var openAllChests = function(chests, numberOfChests) {
-//		console.log("I found " + numberOfChests + " of " + chests);
-		
-//		for (var chestNumber = 0; chestNumber < numberOfChests; chestnumber++) {
-//			chestsRemain = numberOfChests - chestNumber;
-//			console.log(chestNumber + "Open!" + chestsRemain + ".");
-//		}
-//};
-
-
-
-
-//var loot = function(array, howMany) {
-//	for (var i = 0; i < chests.length; i++) {
-//		console.log("Then we saw" + chests[i]);
-		
-//		if (i < howMany) {
-//			console.log("Found another" + chest + "!");
-//		} else {
-//			console.log("Looks like there is no more loot");
-//		};
-//	};
-//};
-
-//loot = ([chests], 5);
-
-
-
-
-
-
-
-//var loot = function([chests], number1)  {
-//	for (var i = 0; i < chests.length; i++){
-//		console.log( "The heroes are looting " + chests + " chest." );
-//	};
-
-//};
-
-
-
-
-
-
-//var spoils =([chests], 5)
-
-
-
-
-
-
-//var spoils = function(chests, amount){
-//	for (var i = 0; i >= amount; i--){
-//		console.log( "" + amount + " of " + chests);
-//	};
-
-//};
-
-//spoils(chests, 5)
-
-
-
-
-//spoils(chests, 5)
-
-
-
-//var spoils = function(howMuch, total) {
-
-//	for (var i = 0; i = total; i--)
-//			console.log("We have discovered " + total + " gold!"
-			
-//			if (
-//};
-
-//for (var i = 0; i < heroes.length; i++) {
-//	console.log( "The heroes " + heroes[i] + " will now split the gold " + monster + " was hoarding.");
-//}; 
-
-
-
-
-
-
-
+chests(["Gold", "Diamond", "Emerald"], 10)  
